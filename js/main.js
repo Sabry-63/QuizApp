@@ -180,11 +180,11 @@ function showResults(qCount) {
 
         // Checked Your Answers
         if (rightAnswers > qCount / 2 && rightAnswers < qCount) {
-            results.innerHTML = `${userName} You\`re A<span class="good"> Good</span> You Answerd ${rightAnswers} From ${qCount}`;
+            results.innerHTML = `${userName} You\`re A<span class="good"> Good</span> You Answerd ${rightAnswers} From ${qCount}<br> <a href="index.html">Try Again</a>`;
         } else if (rightAnswers === qCount) {
-            results.innerHTML = `${userName} You\`re A <span class="perfect"> Perfect</span> You Answerd ${rightAnswers} From ${qCount}`;
+            results.innerHTML = `${userName} You\`re A <span class="perfect"> Perfect</span> You Answerd ${rightAnswers} From ${qCount}<br>  <a href="index.html">Try Again</a>`;
         } else {
-            results.innerHTML = `${userName} <span class="bad"> Sorry Try Again</span> You Answerd ${rightAnswers} From ${qCount}`;
+            results.innerHTML = `${userName} <span class="bad"> Sorry Try Again</span> You Answerd ${rightAnswers} From ${qCount}<br>  <a href="index.html">Try Again</a>`;
         }
     }
 }
