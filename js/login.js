@@ -1,6 +1,7 @@
 // Select Elemets
 let categorySelect = document.getElementById("categorySelect");
 let difficultySelect = document.getElementById("difficultySelect");
+let typeSelect = document.getElementById("typeSelect");
 let amount = document.getElementById("amount");
 let userName = document.getElementById("name");
 let startQuiz = document.getElementById("startQuiz");
@@ -33,6 +34,12 @@ categorySelect.addEventListener("change", () => {
     cSelect = categorySelect.value;
 });
 
+let tSelect;
+typeSelect.addEventListener("change", () => {
+    tSelect = typeSelect.value;
+    console.log(tSelect);
+});
+
 // Start Quiz
 startQuiz.addEventListener("click", () => {
     // Check Inputs Not Empty
@@ -40,7 +47,7 @@ startQuiz.addEventListener("click", () => {
         // Check Amount Questions
         if (amount.value >= 5 && amount.value <= 20) {
             // Set Url
-            let url = ` https://opentdb.com/api.php?amount=${amount.value}&category=${cSelect}&difficulty=${dSelect}&type=multiple`;
+            let url = ` https://opentdb.com/api.php?amount=${amount.value}&category=${cSelect}&difficulty=${dSelect}&type=${tSelect}`;
             localStorage.setItem("URL", JSON.stringify(url));
             localStorage.setItem("name", JSON.stringify(userName.value));
 
