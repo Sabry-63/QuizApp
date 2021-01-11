@@ -147,3 +147,27 @@ body {
 .selecion .inputs {
     display: flex;
 }
+
+@media (max-width: 992px) {
+    .quiz-app {
+        width: 100%;
+    }
+    .selecion .inputs,
+    .quiz-app .quiz-info {
+        display: block;
+    }
+    .selecion .inputs input,
+    .selecion .inputs select {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+    .quiz-info .category,
+    .quiz-info .name,
+    .quiz-info .cuont {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .quiz-app .quiz-area {
+        font-size: 16px;
+    }
+}
