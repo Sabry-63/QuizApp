@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Start Quiz</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="quiz-app">
+            <div class="selecion">
+                <h2>Welcome To Quiz App</h2>
+                <div class="inputs">
+                    <input id="name" type="text" placeholder="Your Name" />
+                    <input id="amount" type="number" min="5" max="20" placeholder="Questions Count" />
+                </div>
+                <div class="inputs">
+                    <select name="" id="categorySelect">
+                        <optgroup label="Select Category">
+                            <option value="" hidden>Select Category</option>
+                            <option value="11">Film</option>
+                            <option value="23">History</option>
+                            <option value="24">Geography</option>
+                            <option value="21">Sports</option>
+                        </optgroup>
+                    </select>
+
+                    <select name="" id="difficultySelect">
+                        <optgroup label="Select Difficulty">
+                            <option value="" hidden>Select Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <button id="startQuiz">Start Quiz</button>
+            </div>
+        </div>
+        <script src="js/login.js"></script>
+    </body>
+</html>
