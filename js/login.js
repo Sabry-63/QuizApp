@@ -57,6 +57,7 @@ startQuiz.addEventListener("click", () => {
                 userName.value = "";
                 difficultySelect.value = "";
                 categorySelect.value = "";
+                typeSelect.value = "";
                 window.location = "quiz.html";
             }, 1000);
         } else {
