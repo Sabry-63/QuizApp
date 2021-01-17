@@ -97,6 +97,7 @@ body {
 .quiz-app .bulltes .spans {
     flex: 1;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .quiz-app .bulltes .spans span {
@@ -104,6 +105,7 @@ body {
     height: 20px;
     background-color: #ddd;
     margin-right: 5px;
+    margin-bottom: 5px;
     border-radius: 50%;
 }
 .quiz-app .bulltes .spans span.on {
